@@ -1,0 +1,325 @@
+html, body {
+	user-select: none;
+}
+
+.headRow {
+	height:60px;
+	padding:10px;
+	background-color: #2a2b85;
+}
+
+.containerr {
+	height:auto;
+	padding:10px 20px;
+	margin-top:40px;
+	box-shadow: 1px 1px 5px grey, -1px -1px 5px grey;
+	background-color: #F0F8FF;
+}
+
+
+.containerr label {
+	padding: 5px 0;
+}
+
+.kutho, .registr, .resetpsw {
+	font-size:22px;
+	text-align: center;
+	height:100%;
+	cursor: default;
+	color:white;
+	letter-spacing: 1.1px;
+}
+
+.headicons {
+	padding:5px 10px;
+	float:right;
+	cursor:pointer;
+	font-size:18px;
+	color:white;
+	letter-spacing: 1.1px;
+}
+
+.icons {
+	text-align: center;
+}
+
+.resetinstruc {
+	text-align: center;
+	letter-spacing: 1.2px;
+	margin-bottom:20px;
+}
+
+.headicons a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Index page*/
+.dohbtn {
+	padding:40px 0;
+	border:1pt solid #2a2b85;
+	color:#2a2b85;
+	margin:60px 0;
+	font-size:60px;
+	text-align: center;
+	cursor:default;
+	border-radius: 5px;
+}
+
+.dohbtn.hover:hover {
+	cursor:pointer;
+	box-shadow: 3px 3px 5px grey;
+	background-color:#2a2b85;
+	color:white;
+}
+
+.instrucTxt {
+	text-align: center;
+	padding:30px 0;
+	font-size: 16px;
+	color:#2a2b85;
+}
+
+/* food.html page*/
+.menuHead {
+	padding:10px 0 15px 0;
+	text-align: center;
+	font-size: 24px;
+	box-shadow: 1px 1px 5px grey, -1px -1px 5px grey;
+	margin-bottom: 20px;
+}
+
+.shopName {
+	font-size:18px;
+	padding:8px 0 8px 15px;
+	letter-spacing: 1.1px;
+}
+
+.menuItem {
+	padding:12px 0 0 40px;
+	font-size: 16px;
+	letter-spacing: 1.1px;
+	position: relative;
+	display: inline-block;
+}
+
+input[type=radio], label {
+	cursor:pointer;
+}
+
+input[type='text'] , input[type='password'], input[type=email] {
+	padding:12px 0;
+	width:100%;
+	margin:10px 0;
+}
+
+/*
+.menuItem.hover:hover .menuItemHoverDisplay {
+	visibility: visible;
+}
+
+.menuItem.hover:hover {
+	cursor: pointer;
+}
+
+.menuItemHoverDisplay {
+	visibility: hidden;
+  	width: 120px;
+  	background-color: black;
+  	color: #fff;
+  	text-align: center;
+  	border-radius: 2px;
+  	padding: 5px 0;
+  	font-size: 12px;
+	
+  	 /*Position the tooltip
+  	position: absolute;
+  	z-index: 1;
+  	top: 5px;
+  	left: 100%;
+  	margin-left: -60px;
+}
+*/
+
+input[type='number'] {
+	text-align: center;
+}
+
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.registrtxt {
+	padding:12px 0 25px 0;
+	text-align: center;
+	font-size:22px;
+}
+
+/*
+.donatebtn {
+	padding:20px;
+	text-align: center;
+	margin-top: 20px;
+	border: 1pt solid #2a2b85;
+	color:#2a2b85;
+}
+
+.donatebtn.hover:hover {
+	background-color: #2a2b85;
+	color: white;
+	cursor: pointer;
+}
+*/
+
+.mandatory {
+	color:red;
+}
+
+/*Donations page*/
+.dohtype {
+	margin:40px 20px;
+	padding:50px 0;
+	border:1pt solid #2a2b85;
+	text-align: center;
+	border-radius: 5px;
+	font-size:26px;
+	color:#2a2b85;
+}
+
+.dohtype.hover:hover {
+	box-shadow: 2px 2px 5px grey;
+	cursor:pointer;
+	color:white;
+	background-color:#2a2b85;
+}
+
+
+.hide {
+	display:none;
+}
+
+.btnFor, .btnPrev {
+	text-align: center;
+	font-size:20px;
+	letter-spacing: 1.2px;
+}
+
+.btnFor.hover:hover, .btnPrev.hover:hover {
+	text-shadow: 1px 1px 3px grey;
+	cursor:pointer;
+	color:white;
+	background-color: #2a2b85;
+	padding:10px 0 15px 0;
+}
+
+.shopBanner {
+	height:200px;
+	width:100%;
+	border:1pt solid #2a2b85;
+}
+
+.aboutShop {
+	height:100px;
+	width:100%;
+}
+
+.restau, .grocer {
+	margin:30px 0 10px 0;
+}
+
+.deliMode, .payMode {
+	height:300px;
+	width:100%;
+	box-shadow: 1px 1px 3px grey, -1px -1px 3px grey;
+}
+
+.deliHead, .payHead {
+	padding:20px 15px;
+	font-size:22px;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	border-color: grey;
+	color:#2a2b85;
+}
+
+.deliBy, .payBy {
+	padding:25px 0 0 30px;;
+	font-size:18px;
+	color:#2a2b85;
+}
+
+.payBy label, .payBy input[type=radio] {
+	cursor: pointer;
+}
+
+.forwardbtn {
+	color:#2a2b85;
+}
+
+.forwardbtn.hover:hover {
+	background-color:#2a2b85;
+	color:white;
+}
+
+.backbtn {
+	color:brown;
+}
+
+.backbtn.hover:hover {
+	background-color: brown;
+	color:white;
+}
+
+.btn {
+	border: 1pt solid;
+	width:100%;
+	padding: 12px 0;
+	margin:20px 0;
+}
+
+.doneeselectionbar, .restauselectionbar, .grocerselectionbar {
+	text-align: center;
+	padding:10px 0;
+	margin:10px 0;
+}
+
+.doneenav {
+	text-align: center;
+	color:grey;
+}
+
+.navbtn {
+	font-size:11px;
+	padding:5px 0;
+}
+
+.navbtn.hover:hover {
+	cursor: pointer;
+	text-shadow: 3px 3px 5px grey;
+}
+
+.doneenav.active {
+	color:#2a2b85;
+	text-decoration: underline;
+}
+
+#menuBox {
+	margin-bottom:20px;
+}
+
+.doneeName {
+	font-size:18px;
+	padding:5px 0;
+}
+
+.doneeLocation {
+	font-size:12px;
+	padding:3px 0;
+}
+
+.doneeDescription {
+	font-size:14px;
+	padding:5px 0 0 0;
+}

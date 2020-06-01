@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kutho Fund - Food stall</title>
+		<link rel="stylesheet" href="files/fonts/uni_font.css">
+        <link rel="stylesheet" href="files/fonts/fonts.css">
+		<link rel="stylesheet" href="files/booty/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="files/booty/css/bootstrap-grid.css">
+		<link rel="stylesheet" href="files/css/style.css">
+		
+    	<script type="text/javascript" src="files/jquery/createjs-2015.11.26.min.js"></script>
+    	<script type="text/javascript" src="files/jquery/jquery-1.12.4.min.js"></script>
+    	<script type="text/javascript" src="files/jquery/jquery-3.4.1.js"></script>
+    	<script type="text/javascript" src="files/jquery/jquery.ui.touch-punch.min.js"></script>
+    	<script type="text/javascript" src="files/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="files/js/script.js"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row headRow">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4 registr">စားစရာ လှူဖွယ်ပစ္စည်းများ</div>
+				
+				<div class="col-sm-4">
+					<div class="headicons"><a href="index.html">Home</a></div>
+				</div>
+			</div>
+			
+			<!-- Row to display about Donee org -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 restau">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="shopBanner">
+								Donee banner here
+							</div>
+							
+							<div class="donee aboutShop">
+								<div class="doneeName"></div>
+								<div class="doneeLocation"></div>
+								<div class="doneeDescription"></div>
+							</div>
+						</div>
+						
+						<div class="col-md-3">
+							<div class="deliMode">
+								<div class="row">
+									<div class="col-md">
+										<div class="deliHead">
+											ပို့ဆောင်ရန်နည်းလမ်းရွေးချယ်ပါ
+										</div>
+									</div>
+								</div>
+							
+								<div class="row">
+									<div class="col-md">
+										<div class="deliBy">
+											<input type="radio" id="pickUp" name="deliType" required>
+											<label for="pickUp">လူကိုယ်တိုင်သွားရောက်ယူပါမည်</label>
+										</div>
+									</div>
+								</div>
+							
+								<div class="row">
+									<div class="col-md">
+										<div class="deliBy">
+											<input type="radio" id="shopdeli" name="deliType" required>
+											<label for="shopdeli">ဆိုင်မှပို့ဆောင်ပေးပါမည်</label>
+										</div>
+									</div>
+								</div>
+							
+								<div class="row">
+									<div class="col-md">
+										<div class="deliBy">
+											<input type="radio" id="ktfdeli" name="deliType" required>
+											<label for="ktfdeli">ကုသိုလ်ဖန် မှ ပိုဆောင်ပေးပါမည်</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="payMode">
+								<div class="row">
+									<div class="col-md">
+										<div class="payHead">
+											ငွေပေးချေရန်နည်းလမ်းရွေးချယ်ပါ
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md">
+										<div class="payBy">
+											<input type="radio" id="cashpay" name="payType" required>
+											<label for="cashpay">ဆိုင်တွင်ပေးပါမည်</label>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md">
+										<div class="payBy hover">
+											<input type="radio" id="wavemoney" name="payType" required>
+											<label for="wavemoney">Wave Money ဖြင့်ပေးပါမည်</label>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md">
+										<div class="payBy">
+											<input type="radio" id="banktransfer" name="payType" required>
+											<label for="banktransfer">ဘဏ်နံပါတ်သို့လွှဲပေးပါမည်</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 doneeselectionbar">
+					<div class="row">
+						<div id="doneenavbackbtn" class="col-md-1 navbtn hover">နောက်သို့</div>
+						<div class="col-md-1 doneenav pg1 active">1</div>
+						<div class="col-md-1 doneenav pg2">2</div>
+						<div class="col-md-1 doneenav pg3">3</div>
+						<div class="col-md-1 doneenav pg4">4</div>
+						<div class="col-md-1 doneenav pg5">5</div>
+						<div class="col-md-1 doneenav pg6">6</div>
+						<div class="col-md-1 doneenav pg7">7</div>
+						<div class="col-md-1 doneenav pg8">8</div>
+						<div class="col-md-1 doneenav pg9">9</div>
+						<div class="col-md-1 doneenav pg10">10</div>
+						<div id="doneenavforbtn" class="col-md-1 navbtn hover">ရှေ့သို့</div>
+					</div>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div id="menuBox" class="col-md-10">
+						
+						<div class="row menuHead">
+							<div class="col-md-10">စားသောက်ဆိုင်အမည်နဲ့ စားဖွယ်ရာများ</div>
+							<div class="col-md-2">အရေအတွက်</div>
+						</div>
+						
+						<div class="row">
+							<div id="shop1" class="col-md-10">
+								<div class="row">
+									<div class="col-md shopName">
+										ဆိုင်အမည်
+									</div>
+								</div>
+								<!-- Class are needed for setting innerHTML values-->
+								<div class="row menuset">
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop1set1" name="rdomenu">
+										<label class="set1" for="shop1set1">Menu set 1</label>
+									</div>
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop1set2" name="rdomenu">
+										<label class="set2" for="shop1set2">Menu set 2</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop1set3" name="rdomenu">
+										<label class="set3" for="shop1set3">Menu set 3</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop1set4" name="rdomenu">
+										<label class="set4" for="shop1set4">Menu set 4</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-2 foodqty">
+								<input id="shop1Qty" type="number" required>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div id="shop2" class="col-md-10">
+								<div class="row">
+									<div  class="col-md shopName">
+										ဆိုင်အမည်
+									</div>
+								</div>
+								
+								<div class="row menuset">
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop2set1" name="rdomenu">
+										<label class="set1" for="shop2set1">Menu set 1</label>
+									</div>
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop2set2" name="rdomenu">
+										<label class="set2" for="shop2set2">Menu set 2</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop2set3" name="rdomenu">
+										<label class="set3" for="shop2set3">Menu set 3</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop2set4" name="rdomenu">
+										<label class="set4" for="shop2set4">Menu set 4</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-2 foodqty">
+								<input id="shop2Qty" type="number" required>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div id="shop3" class="col-md-10">
+								<div class="row">
+									<div  class="col-md shopName">
+										ဆိုင်အမည်
+									</div>
+								</div>
+								
+								<div class="row menuset">
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop3set1" name="rdomenu">
+										<label class="set1" for="shop3set1">Menu set 1</label>
+									</div>
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop3set2" name="rdomenu">
+										<label class="set2" for="shop3set2">Menu set 2</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop3set3" name="rdomenu">
+										<label class="set3" for="shop3set3">Menu set 3</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop3set4" name="rdomenu">
+										<label class="set4" for="shop3set4">Menu set 4</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-2 foodqty">
+								<input id="shop3Qty" type="number" required>
+							</div>
+						</div>
+						
+						<div id="shop4" class="row hide">
+							<div  class="col-md-10">
+								<div class="row">
+									<div class="col-md shopName">
+										ဆိုင်အမည်
+									</div>
+								</div>
+								
+								<div class="row menuset">
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop4set1" name="rdomenu">
+										<label class="set1" for="shop4set1">Menu set 1</label>
+									</div>
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop4set2" name="rdomenu">
+										<label class="set2" for="shop4set2">Menu set 2</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop4set3" name="rdomenu">
+										<label class="set3" for="shop4set3">Menu set 3</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop4set4" name="rdomenu">
+										<label class="set4" for="shop4set4">Menu set 4</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-2 foodqty">
+								<input id="shop4Qty" type="number" required>
+							</div>
+						</div>
+						
+						
+						<div id="shop5" class="row hide">
+							<div   class="col-md-10">
+								<div class="row">
+									<div class="col-md shopName">
+										ဆိုင်အမည်
+									</div>
+								</div>
+								
+								<div class="row menuset">
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop5set1" name="rdomenu">
+										<label class="set1" for="shop5set1">Menu set 1</label>
+									</div>
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop5set2" name="rdomenu">
+										<label class="set2" for="shop5set2">Menu set 2</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop5set3" name="rdomenu">
+										<label class="set3" for="shop5set3">Menu set 3</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop5set4" name="rdomenu">
+										<label class="set4" for="shop5set4">Menu set 4</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-2 foodqty">
+								<input id="shop5Qty" type="number" required>
+							</div>
+						</div>
+						
+							<div id="shop6" class="row hide">
+							<div class="col-md-10">
+								<div class="row">
+									<div class="col-md shopName">
+										ဆိုင်အမည်
+									</div>
+								</div>
+								
+								<div class="row menuset">
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop6set1" name="rdomenu">
+										<label class="set1" for="shop6set1">Menu set 1</label>
+									</div>
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop6set2" name="rdomenu">
+										<label class="set2" for="shop6set2">Menu set 2</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop6set3" name="rdomenu">
+										<label class="set3" for="shop6set3">Menu set 3</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop6set4" name="rdomenu">
+										<label class="set4" for="shop6set4">Menu set 4</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-2 foodqty">
+								<input id="shop6Qty" type="number" required>
+							</div>
+						</div>
+						
+						
+							<div id="shop7" class="row hide">
+							<div class="col-md-10">
+								<div class="row">
+									<div class="col-md shopName">
+										ဆိုင်အမည်
+									</div>
+								</div>
+								
+								<div class="row menuset">
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop7set1" name="rdomenu">
+										<label class="set1" for="shop7set1">Menu set 1</label>
+									</div>
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop7set2" name="rdomenu">
+										<label class="set2" for="shop7set2">Menu set 2</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop7set3" name="rdomenu">
+										<label class="set3" for="shop7set3">Menu set 3</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop7set4" name="rdomenu">
+										<label class="set4" for="shop7set4">Menu set 4</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-2 foodqty">
+								<input id="shop7Qty" type="number" required>
+							</div>
+						</div>
+						
+						<div id="shop8" class="row hide">
+							<div class="col-md-10">
+								<div class="row">
+									<div class="col-md shopName">
+										ဆိုင်အမည်
+									</div>
+								</div>
+								
+								<div class="row menuset">
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set1" name="rdomenu">
+										<label class="set1" for="shop8set1">Menu set 1</label>
+									</div>
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set2" name="rdomenu">
+										<label class="set2" for="shop8set2">Menu set 2</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set3" name="rdomenu">
+										<label class="set3" for="shop8set3">Menu set 3</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set4" name="rdomenu">
+										<label class="set4" for="shop8set4">Menu set 4</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-2 foodqty">
+								<input id="shop8Qty" type="number" required>
+							</div>
+						</div>
+						
+						<div id="shop9" class="row hide">
+							<div class="col-md-10">
+								<div class="row">
+									<div class="col-md shopName">
+										ဆိုင်အမည်
+									</div>
+								</div>
+								
+								<div class="row menuset">
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set1" name="rdomenu">
+										<label class="set1" for="shop8set1">Menu set 1</label>
+									</div>
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set2" name="rdomenu">
+										<label class="set2" for="shop8set2">Menu set 2</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set3" name="rdomenu">
+										<label class="set3" for="shop8set3">Menu set 3</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set4" name="rdomenu">
+										<label class="set4" for="shop8set4">Menu set 4</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-2 foodqty">
+								<input id="shop8Qty" type="number" required>
+							</div>
+						</div>
+						
+						<div id="shop10" class="row hide">
+							<div class="col-md-10">
+								<div class="row">
+									<div class="col-md shopName">
+										ဆိုင်အမည် 
+									</div>
+								</div>
+								
+								<div class="row menuset">
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set1" name="rdomenu">
+										<label class="set1" for="shop8set1">Menu set 1</label>
+									</div>
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set2" name="rdomenu">
+										<label class="set2" for="shop8set2">Menu set 2</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set3" name="rdomenu">
+										<label class="set3" for="shop8set3">Menu set 3</label>
+									</div>
+									
+									<div class="col-md-3 menuItem hover">
+										<input type="radio" id="shop8set4" name="rdomenu">
+										<label class="set4" for="shop8set4">Menu set 4</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-2 foodqty">
+								<input id="shop8Qty" type="number" required>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-1"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6 restauselectionbar">
+						<div class="row">
+							<div id="restaunavbackbtn" class="col-md-1 navbtn hover">နောက်သို့</div>
+							<div class="col-md-1 doneenav pg1 active">1</div>
+							<div class="col-md-1 doneenav pg2">2</div>
+							<div class="col-md-1 doneenav pg3">3</div>
+							<div class="col-md-1 doneenav pg4">4</div>
+							<div class="col-md-1 doneenav pg5">5</div>
+							<div class="col-md-1 doneenav pg6">6</div>
+							<div class="col-md-1 doneenav pg7">7</div>
+							<div class="col-md-1 doneenav pg8">8</div>
+							<div class="col-md-1 doneenav pg9">9</div>
+							<div class="col-md-1 doneenav pg10">10</div>
+							<div id="restaunavforbtn" class="col-md-1 navbtn hover">ရှေ့သို့</div>
+						</div>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div id="backtodoselection" class="col-md-3"><div class="btn backbtn hover">နောက်သို့</div></div>
+					<div class="col-md-4"></div>
+					<div id="proceedtouserinfo" class="col-md-3"><div class="btn forwardbtn hover">ရှေ့သို့ဆက်ရန်</div></div>
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
